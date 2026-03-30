@@ -1,0 +1,13 @@
+rit_add_executable(aware_resize 
+  SOURCES
+    aware_resize.cpp
+)
+
+target_link_libraries(aware_resize 
+  rit::ipcv_aware_resize
+  Boost::filesystem
+  Boost::program_options
+  opencv_core
+  opencv_highgui
+  opencv_imgcodecs
+)
