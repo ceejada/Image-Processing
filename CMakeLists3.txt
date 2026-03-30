@@ -1,0 +1,12 @@
+rit_add_library(ipcv_aware_resize
+  SOURCES
+    ContentAwareResize.cpp
+  HEADERS
+    ContentAwareResize.h
+)
+
+target_link_libraries(ipcv_aware_resize 
+  PUBLIC 
+    opencv_core
+  PRIVATE
+)
